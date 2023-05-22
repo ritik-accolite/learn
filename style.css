@@ -1,0 +1,202 @@
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+
+}
+#logo img{
+    height: 56px;
+    margin: 10px 21px;
+
+}
+
+
+#navbar ul{
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    /* background: url("images\pexels-chan-walrus-958545.jpg") ; */
+    height: 615px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    /* background-color: antiquewhite; */
+    background: url("pexels-chan-walrus-958545.jpg") no-repeat center center/cover ; 
+    /* image not showing  */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9; 
+}
+#home h1{
+    color: rgb(230, 224, 224);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{    
+    border: 2px solid brown;
+    margin: 4px 7px;
+    padding: 11px 46px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 7px;
+}
+#services .box p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+.center{
+    text-align: center;
+}
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('pexels-dapur-melodi-1109197.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('Contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    color: black;
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 3px solid white;
+    color: white;
+    margin: 17px;
+    font-size: 1.4rem;
+    border-radius: 9px;
+    background-color: brown;
+    cursor: pointer;
+}
